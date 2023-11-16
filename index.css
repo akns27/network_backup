@@ -1,4 +1,4 @@
-#Container{
+html, body {
   width: 100%;
   height: 100%;
 }
@@ -12,35 +12,191 @@ font-weight: 600;
 line-height: normal;
 position: relative;
 top: 50px;
-/* display: inline-flex; */
+
 padding: 8px;
 justify-content: center;
 align-items: center;
 gap: 8px;
 }
-#Location{
-  color: #000000;
-font-family: Pretendard;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-top: 352px;
-left : 160px;
-right : 2472px;
-bottom : 1452px;
+
+.outer-container {
+  left: 160px;
+  top: 352px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
 }
-#TodaysFindust{
-  color: #000;
+
+.inner-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+}
+
+.compass-container {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.compass-box {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: linear-gradient(90deg, #9a98ff 0%, rgba(246.5, 98.6, 98.6, 0.5) 100%);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.compass-icon {
+  color: #7b7b7b;
+  font-size: 28px;
   font-family: Pretendard;
-  font-size: 50px;
-  font-style: normal;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.compass-text {
+  color: white;
+  font-size: 24px;
+  font-family: Pretendard;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.dust-level-text {
+  color: black;
+  font-size: 56px;
+  font-family: Pretendard;
   font-weight: 600;
-  line-height: normal;
-  position: relative;
-top: 360px;
-left : 160px;
-right : 2128px;
-bottom : 1345px;
+  word-wrap: break-word;
+}
+
+.dust-level-container {
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 42px;
+  display: inline-flex;
+}
+
+.dust-level-value {
+  color: black;
+  font-size: 96px;
+  font-family: Pretendard;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.dust-level-status {
+  color: #05e700;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.date-container {
+  padding: 8px;
+  left: 1285px;
+  top: 91px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.outer-container-card {
+  padding-top: 100px;
+  padding-bottom: 135px;
+  padding-left: 964px;
+  padding-right: 208px;
+  background: white;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+}
+
+.inner-container-card {
+  width: 100%;
+  height: 100%;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+}
+
+.flex-row {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+}
+
+.card {
+  width: 260px; /* Matching special-card width */
+  height: 280px; /* Matching special-card height */
+  padding-top: 40px;
+  padding-bottom: 40px; /* Adjusted to match special-card */
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url('images/앤팀꽃밭.jpeg');
+  background-position: center; /* Centering the background image */
+  background-size: cover; /* Ensuring the image covers the entire card */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+}
+
+.card-text {
+  width: 225px;
+  color: white;
+  font-size: 28px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+
+.special-card {
+  width: 260px; /* Matching special-card width */
+  height: 280px;
+  padding-top: 40px;
+  padding-bottom: 40px; /* Adjusted dynamically */
+  padding-left: 16px;
+  padding-right: 16px;
+  background: #97c7d9;
+  box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+}
+
+.special-card-text {
+  width: 225px;
+  color: white;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 400;
+  line-height: 25px;
+  word-wrap: break-word;
 }
