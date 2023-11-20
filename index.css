@@ -155,7 +155,6 @@ gap: 8px;
   box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
   border-radius: 8px;
   overflow: hidden;
-  background-image: url('images/앤팀꽃밭.jpeg');
   background-position: center; /* Centering the background image */
   background-size: cover; /* Ensuring the image covers the entire card */
   flex-direction: column;
@@ -164,7 +163,18 @@ gap: 8px;
   display: inline-flex;
   display: block;
 }
-
+#card1{
+  background-image: url('images/송파구.jpeg');
+}
+#card2{
+  background-image: url('images/니콜라스.jpeg');
+}
+#card3{
+  background-image: url('images/한국가을.jpeg');
+}
+#card4{
+  background-image: url('images/남산타워.jpeg');
+}
 .card-text {
   width: 225px;
   color: white;
@@ -182,7 +192,6 @@ gap: 8px;
   padding-bottom: 40px; /* Adjusted dynamically */
   padding-left: 16px;
   padding-right: 16px;
-  background: #97c7d9;
   box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
   border-radius: 8px;
   overflow: hidden;
@@ -192,11 +201,22 @@ gap: 8px;
   display: inline-flex;
   display: none;
 }
-
+#special-card1{
+  background: #c5f4ff;
+}
+#special-card2{
+  background: #000000;
+}
+#special-card3{
+  background: #eef744;
+}
+#special-card4{
+  background: #0a2de0;
+}
 .special-card-text {
   width: 225px;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-family: Pretendard;
   font-weight: 400;
   line-height: 25px;
