@@ -17,7 +17,7 @@ cardContainers.forEach((container) => {
 });
 
 let year = today.getFullYear();
-let month = today.getMonth() + 1; // JavaScript에서 월은 0-11로 표현됩니다.
+let month = today.getMonth() + 1; // JavaScript에서 월은 0-11로 표현됨
 let day = today.getDate();
 
 let formattedMonth = month < 10 ? `0${month}` : month;
@@ -73,7 +73,44 @@ function showError(error) {
   // 오류 처리 로직
 }
 
-// 페이지 로드 시 사용자의 위치를 얻는 함수 호출
+
+
+function updateDustLevelStatus() {
+  var dustLevel = parseInt(document.getElementById('dustLevel').textContent);
+  var dustLevelStatus = document.getElementById('dustLevelStatus');
+
+  if (dustLevel >= 10 && dustLevel <= 30) {
+      dustLevelStatus.textContent = '좋음';
+      dustLevelStatus.className = 'good';
+  } else if (dustLevel >= 31 && dustLevel <= 80) {
+      dustLevelStatus.textContent = '보통';
+      dustLevelStatus.className = 'moderate';
+  } else if (dustLevel >= 81 && dustLevel <= 150) {
+      dustLevelStatus.textContent = '나쁨';
+      dustLevelStatus.className = 'poor';
+  } else if (dustLevel >= 161) {
+      dustLevelStatus.textContent = '매우 나쁨';
+      dustLevelStatus.className = 'very-poor';
+  }
+}
+function updateDustLevelDisplay() {
+  var dustLevelElement = document.getElementById('dustLevel');
+  var fullText = dustLevelElement.textContent;
+
+  // 정규 표현식을 사용하여 숫자만 추출
+  var numericValue = fullText.match(/\d+/)[0];
+
+  // 숫자 뒤에 "µg/m^3" 단위 추가
+  var formattedDustLevel = numericValue + 'µg/m^3';
+
+  // 업데이트된 문자열을 HTML 요소에 표시
+  dustLevelElement.textContent = formattedDustLevel;
+}
+
+
+// 페이지 로드 시 먼지 농도 상태 업데이트
 window.onload = function () {
   getLocation();
+  updateDustLevelStatus();
+  updateDustLevelDisplay();
 };

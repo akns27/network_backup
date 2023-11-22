@@ -181,7 +181,7 @@ gap: 8px;
   font-size: 28px;
   font-family: Pretendard;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 35px;
   word-wrap: break-word;
 }
 
@@ -219,9 +219,37 @@ gap: 8px;
   font-size: 24px;
   font-family: Pretendard;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 32px;
   word-wrap: break-word;
 }
 .card-container {
   position: relative;
 }
+.good { 
+  color: skyblue;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word; }
+
+.moderate { 
+  color: green;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word; }
+
+.poor { 
+  color: orange;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.very-poor { 
+  color: red;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word;
+ }
