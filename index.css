@@ -143,6 +143,14 @@ gap: 8px;
   align-items: flex-start;
   gap: 24px;
   display: inline-flex;
+  visibility: visible;
+}
+.flex-row2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  visibility: hidden;
 }
 
 .card {
@@ -174,6 +182,9 @@ gap: 8px;
 }
 #card4{
   background-image: url('images/남산타워.jpeg');
+}
+#card5{
+  background-image: url('images/Thirsty.jpeg');
 }
 .card-text {
   width: 225px;
@@ -208,10 +219,13 @@ gap: 8px;
   background: #000000;
 }
 #special-card3{
-  background: #f7c200;
+  background: #f75b00;
 }
 #special-card4{
   background: #0a2de0;
+}
+#special-card5{
+  background: #f7c200;
 }
 .special-card-text {
   width: 225px;
@@ -230,7 +244,8 @@ gap: 8px;
   font-size: 56px;
   font-family: Pretendard;
   font-weight: 600;
-  word-wrap: break-word; }
+  word-wrap: break-word; 
+}
 
 .moderate { 
   color: green;
@@ -238,18 +253,15 @@ gap: 8px;
   font-family: Pretendard;
   font-weight: 600;
   word-wrap: break-word; }
-
 .poor { 
   color: orange;
   font-size: 56px;
   font-family: Pretendard;
   font-weight: 600;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 .very-poor { 
   color: red;
   font-size: 56px;
   font-family: Pretendard;
   font-weight: 600;
-  word-wrap: break-word;
- }
+  word-wrap: break-word; }
