@@ -90,6 +90,7 @@ function updateDustLevelStatus() {
   } else if (dustLevel >= 161) {
     dustLevelStatus.textContent = "매우 나쁨";
     dustLevelStatus.className = "very-poor";
+    window.location.href = "https://akns27.github.io/SubNetwork/";
   }
 }
 

@@ -173,21 +173,18 @@ gap: 8px;
   position : relative;
 }
 #card1{
-  background-image: url('images/송파구.jpeg');
-  z-index: 9;
+  background-image: url('images/봄 1.png');
 }
 #card2{
-  background-image: url('images/니콜라스.jpeg');
+  background-image: url('images/여름 1.png');
 }
 #card3{
-  background-image: url('images/한국가을.jpeg');
+  background-image: url('images/가을 1.png');
 }
 #card4{
-  background-image: url('images/남산타워.jpeg');
+  background-image: url('images/겨울 1.png');
 }
-#card5{
-  background-image: url('images/Thirsty.jpeg');
-}
+
 
 .card-text {
   width: 225px;
@@ -202,8 +199,8 @@ gap: 8px;
 .special-card {
   width: 260px; /* Matching special-card width */
   height: 280px;
-  padding-top: 40px;
-  padding-bottom: 40px; /* Adjusted dynamically */
+  padding-top: 20px;
+  padding-bottom: 60px; /* Adjusted dynamically */
   padding-left: 16px;
   padding-right: 16px;
   box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
@@ -217,20 +214,26 @@ gap: 8px;
   position: relative;
 }
 #special-card1{
-  background: #037690;
+  background-image: url('images/봄 1.png');
+  background-size: 170%;
+  background-position: center;
 }
 #special-card2{
-  background: #000000;
+  background-image: url('images/여름 1.png');
+  background-size: 170%;
+  background-position: left;
 }
 #special-card3{
-  background: #f75b00;
+  background-image: url('images/가을 1.png');
+  background-size: 170%;
+  background-position: bottom;
 }
 #special-card4{
-  background: #0a2de0;
+  background-image: url('images/겨울 1.png');
+  background-size: 170%;
+  background-position: center;
 }
-#special-card5{
-  background: #f7c200;
-}
+
 .special-card-text {
   width: 225px;
   color: white;
