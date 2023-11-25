@@ -170,9 +170,11 @@ gap: 8px;
   align-items: center;
   display: inline-flex;
   display: block;
+  position : relative;
 }
 #card1{
   background-image: url('images/송파구.jpeg');
+  z-index: 9;
 }
 #card2{
   background-image: url('images/니콜라스.jpeg');
@@ -186,6 +188,7 @@ gap: 8px;
 #card5{
   background-image: url('images/Thirsty.jpeg');
 }
+
 .card-text {
   width: 225px;
   color: white;
@@ -211,6 +214,7 @@ gap: 8px;
   align-items: center;
   display: inline-flex;
   display: none;
+  position: relative;
 }
 #special-card1{
   background: #037690;
@@ -265,3 +269,10 @@ gap: 8px;
   font-family: Pretendard;
   font-weight: 600;
   word-wrap: break-word; }
+
+  #hiddenSection {
+    display: none;
+    position: relative; /* 또는 absolute, 필요에 따라 */
+    z-index: 10; /* 다른 요소들 위에 표시되도록 */
+    margin-top: 20px; /* 필요한 경우 간격 조정 */
+  }
