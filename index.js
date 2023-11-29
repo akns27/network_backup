@@ -40,13 +40,13 @@ function getLocation() {
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
-  getCityKakao(latitude, longitude); // 올바른 함수 이름으로 수정
+  getNeighborhoodKakao(latitude, longitude); // 올바른 함수 이름으로 수정
 }
 
 // 지오코딩 API를 사용하여 도시 이름을 얻는 함수
-function getCityKakao(latitude, longitude) {
+function getNeighborhoodKakao(latitude, longitude) {
   let geocodingAPI =
-    "https://dapi.kakao.com/v2/local/geo/coord2address.json?x=" +
+    "https://dapi.kakao.com/v2/local/geo/coord2regioncode.json?x=" +
     longitude +
     "&y=" +
     latitude;
@@ -57,16 +57,17 @@ function getCityKakao(latitude, longitude) {
   fetch(geocodingAPI, { headers: headers })
     .then((response) => response.json())
     .then((data) => {
-      var city = data.documents[0].address.region_1depth_name; // 도시 이름 추출
-      updateCityName(city);
+      var neighborhood = data.documents[0].region_3depth_name; // 동네 이름 추출
+      updateNeighborhoodName(neighborhood);
     })
     .catch((error) => console.log(error));
 }
 
 // HTML 요소의 내용을 업데이트하는 함수
-function updateCityName(cityName) {
-  document.getElementById("location").textContent = cityName;
+function updateNeighborhoodName(neighborhoodName) {
+  document.getElementById("location").textContent = neighborhoodName;
 }
+
 
 // 오류 처리 함수
 function showError(error) {
