@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대저동 데이터</title>
+</head>
+<body>
+    <div id="data-container">
+        {% if data %}
+            <h1>대저동 데이터</h1>
+            <ul>
+                {% for item in data %}
+                    <li>
+                        <p>Station Name: {{ item.stationName }}</p>
+                        <p>Data Time: {{ item.dataTime }}</p>
+                        <p>PM10 Value: {{ item.pm10Value }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>데이터가 없습니다.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
