@@ -40,3 +40,4 @@ def fetch_and_store_data_in_mysql():
             print("API로부터 데이터를 받아오지 못했습니다.")
     except Exception as e:
         print(f"오류 발생: {str(e)}")
+        

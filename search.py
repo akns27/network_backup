@@ -31,6 +31,5 @@ def fetch_and_print_daejeo_data():
     except Exception as e:
         print(f"오류 발생: {str(e)}")
 
-# 대저동 데이터 출력 함수 실행
 
 

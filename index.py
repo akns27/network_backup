@@ -18,3 +18,4 @@ if __name__ == "__main__":
   # fetch_and_store_data_in_mysql 함수 실행
   insert.fetch_and_store_data_in_mysql()
 
+
