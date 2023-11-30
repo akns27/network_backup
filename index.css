@@ -1,0 +1,275 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+#Topdiv {
+text-align: center;
+color: #000;
+font-family: Pretendard;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+position: relative;
+top: 50px;
+
+padding: 8px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+
+.outer-container {
+  left: 160px;
+  top: 352px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+}
+
+.inner-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+}
+
+.compass-container {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.compass-box {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: linear-gradient(90deg, #9a98ff 0%, rgba(246.5, 98.6, 98.6, 0.5) 100%);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.compass-icon {
+  color: #7b7b7b;
+  font-size: 28px;
+  font-family: Pretendard;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.compass-text {
+  color: white;
+  font-size: 24px;
+  font-family: Pretendard;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.dust-level-text {
+  color: black;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.dust-level-container {
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 42px;
+  display: inline-flex;
+}
+
+.dust-level-value {
+  color: black;
+  font-size: 96px;
+  font-family: Pretendard;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.dust-level-status {
+  color: #05e700;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.date-container {
+  padding: 8px;
+  left: 1285px;
+  top: 91px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.outer-container-card {
+  padding-top: 100px;
+  padding-bottom: 135px;
+  padding-left: 964px;
+  padding-right: 208px;
+  background: white;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+}
+
+.inner-container-card {
+  width: 100%;
+  height: 100%;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+}
+
+.flex-row {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  visibility: visible;
+}
+.flex-row2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  visibility: hidden;
+}
+
+.card {
+  width: 260px; /* Matching special-card width */
+  height: 280px; /* Matching special-card height */
+  padding-top: 40px;
+  padding-bottom: 40px; /* Adjusted to match special-card */
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  background-position: center; /* Centering the background image */
+  background-size: cover; /* Ensuring the image covers the entire card */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  display: block;
+  position : relative;
+}
+#card1{
+  background-image: url('images/봄 1.png');
+}
+#card2{
+  background-image: url('images/여름 1.png');
+}
+#card3{
+  background-image: url('images/가을 1.png');
+}
+#card4{
+  background-image: url('images/겨울 1.png');
+}
+
+
+.card-text {
+  width: 225px;
+  color: white;
+  font-size: 28px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 35px;
+  word-wrap: break-word;
+}
+
+.special-card {
+  width: 260px; /* Matching special-card width */
+  height: 280px;
+  padding-top: 20px;
+  padding-bottom: 60px; /* Adjusted dynamically */
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 2px 4px 10px 2px rgba(146.04, 141.82, 141.82, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  display: none;
+  position: relative;
+}
+#special-card1{
+  background-image: url('images/봄 1.png');
+  background-size: 170%;
+  background-position: center;
+}
+#special-card2{
+  background-image: url('images/여름 1.png');
+  background-size: 170%;
+  background-position: left;
+}
+#special-card3{
+  background-image: url('images/가을 1.png');
+  background-size: 170%;
+  background-position: bottom;
+}
+#special-card4{
+  background-image: url('images/겨울 1.png');
+  background-size: 170%;
+  background-position: center;
+}
+
+.special-card-text {
+  width: 225px;
+  color: white;
+  font-size: 24px;
+  font-family: Pretendard;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+.card-container {
+  position: relative;
+}
+.good { 
+  color: skyblue;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word; 
+}
+
+.moderate { 
+  color: green;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word; }
+.poor { 
+  color: orange;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word; }
+.very-poor { 
+  color: red;
+  font-size: 56px;
+  font-family: Pretendard;
+  font-weight: 600;
+  word-wrap: break-word; }
+
