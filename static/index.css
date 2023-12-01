@@ -95,6 +95,7 @@ gap: 8px;
   font-family: Pretendard;
   font-weight: 700;
   word-wrap: break-word;
+  list-style :none;
 }
 
 .dust-level-status {
@@ -173,16 +174,16 @@ gap: 8px;
   position : relative;
 }
 #card1{
-  background-image: url('images/봄 1.png');
+  background-image: url('images/spring 1.png');
 }
 #card2{
-  background-image: url('images/여름 1.png');
+  background-image: url('images/summer 1.png');
 }
 #card3{
-  background-image: url('images/가을 1.png');
+  background-image: url('images/fall 1.png');
 }
 #card4{
-  background-image: url('images/겨울 1.png');
+  background-image: url('images/winter 1.png');
 }
 
 

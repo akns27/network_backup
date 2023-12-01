@@ -8,4 +8,3 @@ def delete_data_in_mysql():
     cursor = conn.cursor()
     cursor.execute("DELETE FROM fine_dust")
     cursor.execute("ALTER TABLE fine_dust AUTO_INCREMENT = 1")
-

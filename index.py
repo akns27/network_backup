@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     # fetch_and_print_daejeo_data 함수 실행
     data_from_db = search.fetch_and_print_daejeo_data()
-    return render_template("test.html", data =data_from_db)
+    return render_template("index.html", data =data_from_db)
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0")

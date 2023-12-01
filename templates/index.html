@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="static/index.css" />
 </head>
 
 <body>
@@ -24,7 +24,18 @@
       <div class="dust-level-text">현재 미세먼지 농도</div>
     </div>
     <div class="dust-level-container">
-      <div id="dustLevel" class="dust-level-value">150</div>
+      <div id="dustLevel" class="dust-level-value">
+        {% if data %}
+        <ul>
+          {% for item in data %}
+          <li>
+            {{ item.pm10Value }}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        </ul>
+      </div>
       <div id="dustLevelStatus" class="dust-level-status"></div>
     </div>
   </div>
@@ -73,7 +84,7 @@
         </div>
       </div>
 
-      <script src="index.js"></script>
+      <script src="static/index.js"></script>>
 </body>
 
 </html>
