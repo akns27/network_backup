@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="static/index.css" />
+</head>
+
+<body>
+  <div id="Topdiv"></div>
+  <div class="outer-container">
+    <div class="inner-container">
+      <div class="compass-container">
+        <div class="compass-box">
+          <div>
+            <span class="compass-icon">🧭 </span>
+            <span class="compass-text" id="location"></span>
+          </div>
+        </div>
+      </div>
+      <div class="dust-level-text">현재 미세먼지 농도</div>
+    </div>
+    <div class="dust-level-container">
+      <div id="dustLevel" class="dust-level-value">
+        <!-- 백엔드에서 가져온 데이터의 첫 번째 요소를 표시합니다. -->
+        {% if data %}
+          {{ data[0].pm10Value }}
+        {% else %}
+          데이터가 없습니다.
+        {% endif %}
+      </div>
+      <div id="dustLevelStatus" class="dust-level-status"></div>
+    </div>
+  </div>
+  <div class="outer-container-card">
+    <div class="inner-container-card">
+      <div class="flex-row">
+        <div class="card-container">
+          <div class="card" id="card1">
+            <div class="card-text">외출 전 미세먼지 농도를 확인하세요</div>
+          </div>
+          <div class="special-card" id="special-card1">
+            <div class="special-card-text">외출하기 전 미세먼지 농도를 확인하고 알맞은 행동 수칙을 알아두세요</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card" id="card2">
+            <div class="card-text">보건용 마스크를 준비하세요</div>
+          </div>
+          <div class="special-card" id="special-card2">
+            <div class="special-card-text">마스크에 쓰인 KF는 KF뒤에 숫자를 표시하여 해당 제품의 입자차단 성능을 나타냅니다. KF80은 황사, 미세먼지, KF90은 황사,
+              미세먼지, 신종플루 같은 감염원으로부터 호흡기를 보호할 수 있습니다</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="card-container">
+          <div class="card" id="card3">
+            <div class="card-text">손 씻기와 위생관리를 철저히 하세요.</div>
+          </div>
+          <div class="special-card" id="special-card3">
+            <div class="special-card-text">손바닥>손등>손가락 사이>두 손 모아>엄지 손가락>손톱 밑 순서대로 30초 이상 씻으세요</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card" id="card4">
+            <div class="card-text">기타</div>
+          </div>
+          <div class="special-card" id="special-card4">
+            <div class="special-card-text">
+              <ul>
+                <li>시금치, 부추, 당근 등 비타민과 항산화제가 풍부한 과일과 채소를 드세요.</li>
+                <li>물을 충분히 섭취하세요.(약 2L)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="static/index.js"></script>>
+</body>
+
+</html>
