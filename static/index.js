@@ -71,9 +71,8 @@ function updateNeighborhoodName(neighborhoodName) {
 
 // 오류 처리 함수
 function showError(error) {
-  // 오류 처리 로직
-  console.log("Error in location");
-  updateNeighborhoodName('대저동');
+  console.log("Error in getting geolocation ", error);
+  updateNeighborhoodName('대저동'); // 위치 정보를 가져오는데 실패한 경우 '대저동'으로 설정
 }
 
 function updateDustLevelStatus() {
@@ -89,21 +88,19 @@ function updateDustLevelStatus() {
   } else if (dustLevel >= 81 && dustLevel <= 150) {
     dustLevelStatus.textContent = "나쁨";
     dustLevelStatus.className = "poor";
+    window.open('https://akns27.github.io/SubNetwork/');
   } else if (dustLevel > 150) {
     dustLevelStatus.textContent = "매우 나쁨";
     dustLevelStatus.className = "very-poor";
+    window.open('https://akns27.github.io/SubNetwork/');
   } else {
     // 데이터가 없거나 읽을 수 없는 값인 경우
     dustLevelStatus.textContent = "데이터를 읽을 수 없음";
     dustLevelStatus.className = "unknown";
   }
 }
-
-// // 페이지가 로드되면 상태를 업데이트합니다.
-// function forceRefresh() {
-//   location.reload(true); // 새로고침하며 캐시를 무시하여 서버에 새로운 요청 보냄
-// }
-
+//.
+// 페이지가 로드되면 상태를 업데이트합니다.
 window.addEventListener('DOMContentLoaded', (event) => {
   updateDustLevelStatus();
 });
