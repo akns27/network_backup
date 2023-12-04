@@ -215,22 +215,22 @@ gap: 8px;
   position: relative;
 }
 #special-card1{
-  background-image: url('images/봄 1.png');
+  background-image: url('images/spring 1.png');
   background-size: 170%;
   background-position: center;
 }
 #special-card2{
-  background-image: url('images/여름 1.png');
+  background-image: url('images/summer 1.png');
   background-size: 170%;
   background-position: left;
 }
 #special-card3{
-  background-image: url('images/가을 1.png');
+  background-image: url('images/fall 1.png');
   background-size: 170%;
   background-position: bottom;
 }
 #special-card4{
-  background-image: url('images/겨울 1.png');
+  background-image: url('images/winter 1.png');
   background-size: 170%;
   background-position: center;
 }

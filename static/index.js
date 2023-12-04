@@ -88,11 +88,9 @@ function updateDustLevelStatus() {
   } else if (dustLevel >= 81 && dustLevel <= 150) {
     dustLevelStatus.textContent = "나쁨";
     dustLevelStatus.className = "poor";
-    window.open('https://akns27.github.io/SubNetwork/');
   } else if (dustLevel > 150) {
     dustLevelStatus.textContent = "매우 나쁨";
     dustLevelStatus.className = "very-poor";
-    window.open('https://akns27.github.io/SubNetwork/');
   } else {
     // 데이터가 없거나 읽을 수 없는 값인 경우
     dustLevelStatus.textContent = "데이터를 읽을 수 없음";
