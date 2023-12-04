@@ -16,17 +16,17 @@ GPIO.setup(10, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(12, GPIO.OUT, initial=GPIO.LOW)
 
 # LED 제어 함수
-def control_led(value):
+def control_led(data):
     try:
-        if value >= 150:
+        if data >= 150:
             GPIO.output(10, GPIO.HIGH)
             GPIO.output(8, GPIO.LOW)
             GPIO.output(12, GPIO.LOW)
-        elif value >= 80:
+        elif data >= 80:
             GPIO.output(8, GPIO.HIGH)
             GPIO.output(10, GPIO.LOW)
             GPIO.output(12, GPIO.LOW)
-        elif value >= 30:
+        elif data >= 30:
             GPIO.output(12, GPIO.HIGH)
             GPIO.output(8, GPIO.LOW)
             GPIO.output(10, GPIO.LOW)

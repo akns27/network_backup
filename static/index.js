@@ -72,7 +72,7 @@ function updateNeighborhoodName(neighborhoodName) {
 // 오류 처리 함수
 function showError(error) {
   console.log("Error in getting geolocation ", error);
-  updateNeighborhoodName('대저동'); // 위치 정보를 가져오는데 실패한 경우 '대저동'으로 설정
+  updateNeighborhoodName('봉림동'); // 위치 정보를 가져오는데 실패한 경우 '대저동'으로 설정
 }
 
 function updateDustLevelStatus() {
