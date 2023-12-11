@@ -4,7 +4,7 @@ import search
 import insert
 import RPi.GPIO as GPIO
 
-GPIO.setwarnings(False)  # GPIO warning 메시지 비활성화
+#GPIO.setwarnings(False)  # GPIO warning 메시지 비활성화
 
 # GPIO 핀 초기화
 GPIO.cleanup()
@@ -18,17 +18,20 @@ GPIO.setup(12, GPIO.OUT, initial=GPIO.LOW)
 # LED 제어 함수
 def control_led(data):
     try:
-        if data >= 150:
+        print(*data)
+        data = int(data[0].get('pm10Value'))
+        print(data)
+        if data >= 80:
+            GPIO.output(12, GPIO.HIGH)
+            GPIO.output(10, GPIO.LOW)
+            GPIO.output(8, GPIO.LOW)
+        elif data >= 30:
             GPIO.output(10, GPIO.HIGH)
             GPIO.output(8, GPIO.LOW)
             GPIO.output(12, GPIO.LOW)
-        elif data >= 80:
+        elif data >= 10:
             GPIO.output(8, GPIO.HIGH)
-            GPIO.output(10, GPIO.LOW)
             GPIO.output(12, GPIO.LOW)
-        elif data >= 30:
-            GPIO.output(12, GPIO.HIGH)
-            GPIO.output(8, GPIO.LOW)
             GPIO.output(10, GPIO.LOW)
         else:
             GPIO.output(8, GPIO.LOW)
@@ -37,3 +40,4 @@ def control_led(data):
     except Exception as e:
         print(e)
         GPIO.cleanup()
+
